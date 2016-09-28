@@ -1,4 +1,4 @@
-import { Comoponent } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
     selector: 'about',
@@ -6,6 +6,6 @@ import { Comoponent } from '@angular/core';
         <h1>About the races</h1>
         <p>Some info on the races</p>
     `
-});
+})
 
 export class AboutComponent {}
