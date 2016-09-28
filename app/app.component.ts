@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
-import { HTTP_PROVIDERS } from '@angular/http';
-import { ROUTER_DIRECTIVES } from '@angular/router';
+import { Component } from '@angular/core'
+import { RaceService } from './race.service'
+import { HTTP_PROVIDERS } from '@angular/http'
+import { ROUTER_DIRECTIVES } from '@angular/router'
 
 @Component({
   selector: 'racing-app',
@@ -16,11 +17,14 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
             </div>
         </div>
     </nav>
-    <main><router-outlet></router-outlet></main>
+    <main role="main">
+        <router-outlet></router-outlet>
+    </main>
 `,
   directives: [ROUTER_DIRECTIVES],
-  providers:[HTTP_PROVIDERS]
+  providers:[RaceService, HTTP_PROVIDERS]
 })
+
 export class AppComponent {
 
 }

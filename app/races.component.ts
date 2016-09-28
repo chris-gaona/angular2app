@@ -13,12 +13,12 @@ export class RacesComponent {
   cash = 10000;
   races: Race[];
 
-  constructor(private raceService: RaceService) { }
+    constructor(private raceService: RaceService) { }
 
-  ngOnInit() {
-    this.raceService.getRaces()
-        .subscribe(data => this.races = data);
-  }
+    ngOnInit() {
+        this.raceService.getRaces()
+            .subscribe(data => this.races = data);
+    }
 
   totalCost() {
     let sum = 0;
